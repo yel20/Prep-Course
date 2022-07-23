@@ -13,7 +13,7 @@ const nuevoBool = true;
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 40 === true;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
@@ -296,7 +296,7 @@ function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
 
-  let area = base * altura
+  let area = (base * altura) / 2;
   return area
 
 }
@@ -320,9 +320,17 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
 
-
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u" ){
+    return "Es vocal"
+  } else if(letra.length >= 2){
+    return "Dato incorrecto"
+  } else {
+    return "Dato incorrecto"
+  }
 
 }
+
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------
